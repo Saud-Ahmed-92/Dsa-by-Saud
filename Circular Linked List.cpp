@@ -1,5 +1,5 @@
 #include <iostream>
-#include <stdlib.h> // Required for malloc
+#include <stdlib.h> 
 using namespace std;
 
 struct Node {
@@ -8,7 +8,7 @@ struct Node {
 };
 
 int main() {
-    Node* head = NULL; // Head of the circular linked list
+    Node* head = NULL; // Head
 
     cout << "Enter numbers to insert into the circular linked list (enter -1 to stop):\n";
 
@@ -32,7 +32,7 @@ int main() {
                 curr = curr->next;
             }
             curr->next = ptr;
-            ptr->next = head; // Maintain circular link
+            ptr->next = head; //move to next
         }
     }
 
